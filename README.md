@@ -14,7 +14,7 @@
       <br>
       example, /api/v3/events?type=latest&limit=5&page=1
     </p>
-    <h3>GET /api/v3/events/:id</h3>
+    <h3>GET /api/v3/events/:event_id</h3>
     <p>
       Returns the event with the specified ID.
     </p>
