@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event API Documentation</title>
+  </head>
+  <body>
+    <h1>Event API Documentation</h1>
+    <p>
+      Welcome to the documentation for the Event API. This API allows you to create, read, update, and delete events.
+    </p>
+    <h2>Endpoints</h2>
+    <h3>GET /api/v3/events</h3>
+    <p>
+      Returns a list of all events. you can provide event type, limit and page too.
+      <br>
+      example, /api/v3/events?type=latest&limit=5&page=1
+    </p>
+    <h3>GET /api/v3/events/:id</h3>
+    <p>
+      Returns the event with the specified ID.
+    </p>
+    <h3>POST /api/v3/events</h3>
+    <p>
+      Creates a new event.
+    </p>
+    <h4>Parameters</h4>
+    <ul>
+      <li><code>type</code>: The type of the event.</li>
+      <li><code>name</code>: The name of the event.</li>
+      <li><code>tagline</code>: A short tagline for the event.</li>
+      <li><code>schedule</code>: The schedule for the event.</li>
+      <li><code>description</code>: The description of the event.</li>
+      <li><code>moderator</code>: The name of the moderator for the event.</li>
+      <li><code>category</code>: The category of the event.</li>
+      <li><code>sub_category</code>: The sub category of the event.</li>
+      <li><code>rigor_rank</code>: The rigor rank of the event.</li>
+      <li><code>image</code>: An image for the event.</li>
+    </ul>
+    <h3>PUT /api/v3/events/:id</h3>
+    <p>
+      Updates the event with the specified ID.
+    </p>
+    <h4>Parameters</h4>
+    <ul>
+      <li><code>type</code>: The type of the event.</li>
+      <li><code>name</code>: The name of the event.</li>
+      <li><code>tagline</code>: A short tagline for the event.</li>
+      <li><code>schedule</code>: The schedule for the event.</li>
+      <li><code>description</code>: The description of the event.</li>
+      <li><code>moderator</code>: The name of the moderator for the event.</li>
+      <li><code>category</code>: The category of the event.</li>
+      <li><code>sub_category</code>: The sub-category of the event.</li>
+      <li><code>rigor_rank</code>: The rigor rank of the event.</li>
+      <li><code>image</code>: An image for the event.</li>
+    </ul>
+    <h3>DELETE /api/v3/events/:id</h3>
+    <p>
+      Deletes the event with the specified ID.
+    </p>
+  </body>
+</html>
