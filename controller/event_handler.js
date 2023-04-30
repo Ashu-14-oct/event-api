@@ -10,7 +10,6 @@ const upload = multer({ dest: 'uploads/'});
 //get an event
 module.exports.getEvent = async function(req, res){
     try{
-        console.log('in get event LOL');
         //check if event_id is correct
         const eventId = req.params.event_id;
         if (!mongoose.Types.ObjectId.isValid(eventId)) {
